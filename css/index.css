@@ -37,10 +37,10 @@
   }
   .nav {
     align-items: center;
-    &-item {
-      flex-direction: column;
-      width: 13rem;
-    }
+  }
+  .nav-item {
+    flex-direction: column;
+    width: 13rem;
   }
 }
 
