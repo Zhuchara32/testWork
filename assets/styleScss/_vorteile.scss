@@ -1,0 +1,149 @@
+.vorteile {
+  &-heading {
+    margin: 5rem 0;
+    @include fontBBC ($ls:$LSHeadingInBorder, $fw: 500, $fs: $FSHeadInBorder);
+    color: #020303;
+  }
+  &-content {
+    margin-bottom: 8rem;
+    &__item {
+      height: 136px;
+      background: #ffffff;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 16px;
+
+      &:hover {
+        background: #4467d1;
+        cursor: pointer;
+      }
+      &:hover > .item__text {
+        color: white;
+      }
+      &:hover > .item__imgApp > .geringe {
+        width: 49px;
+        height: 39px;
+        background-position: -335px -195px;
+      }
+      &:hover > .item__imgApp > .integrierter {
+        width: 50px;
+        height: 56px;
+        background-position: -152px -242px;
+      }
+      &:hover > .item__imgApp > .fur {
+        width: 56px;
+        height: 57px;
+        background-position: -86px -91px;
+      }
+      &:hover > .item__imgApp > .auben {
+        width: 72px;
+        height: 43px;
+        background-position: -170px -73px;
+      }
+      &:hover > .item__imgApp > .anlieferung {
+        width: 60px;
+        height: 44px;
+        background-position: -222px -242px;
+      }
+      &:hover > .item__imgApp > .automatische {
+        width: 53px;
+        height: 55px;
+        background-position: -262px -85px;
+      }
+      &:hover > .item__imgApp > .robustes {
+        width: 54px;
+        height: 54px;
+        background-position: -84px -168px;
+      }
+      &:hover > .item__imgApp > .shallemissionen {
+        width: 56px;
+        height: 43px;
+        background-position: -335px -73px;
+      }
+      &:hover > .item__imgApp > .wetterfest {
+        width: 60px;
+        height: 61px;
+        background-position: -90px -10px;
+      }
+      &:hover > .item__imgApp > .erhohte {
+        width: 52px;
+        height: 56px;
+        background-position: -10px -242px;
+      }
+    }
+  }
+}
+
+.item__text {
+  @include fontSans($fs: $FSVorteile);
+  letter-spacing: $LSBasic;
+  color: #45494f;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.item__img {
+  background: url(/assets/img/css_sprites.png);
+}
+
+.geringe {
+  width: 49px;
+  height: 39px;
+  background-position: -335px -136px;
+}
+
+.integrierter {
+  width: 50px;
+  height: 56px;
+  background-position: -82px -242px;
+}
+.fur {
+  width: 56px;
+  height: 57px;
+  background-position: -10px -91px;
+}
+.auben {
+  width: 72px;
+  height: 43px;
+  background-position: -170px -10px;
+}
+.anlieferung {
+  width: 60px;
+  height: 44px;
+  background-position: -158px -168px;
+}
+.automatische {
+  width: 53px;
+  height: 55px;
+  background-position: -262px -10px;
+}
+.robustes {
+  width: 54px;
+  height: 54px;
+  background-position: -10px -168px;
+}
+.shallemissionen {
+  width: 56px;
+  height: 43px;
+  background-position: -335px -10px;
+}
+.wetterfest {
+  width: 60px;
+  height: 61px;
+  background-position: -10px -10px;
+}
+.erhohte {
+  width: 52px;
+  height: 56px;
+  background-position: -262px -160px;
+}
+@media only screen and (max-width: 992px) {
+  .vorteile {
+    &-heading {
+      margin: 2rem 0;
+      font-size: $FSHeadInBorderMob;
+    }
+    &-content {
+      margin-bottom: 4rem;
+    }
+  }
+}

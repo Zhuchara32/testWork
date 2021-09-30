@@ -1,0 +1,43 @@
+.modern {
+  padding: 0;
+
+  &-article {
+    background: #003584;
+
+    &__app {
+      margin: 10rem 0;
+    }
+
+    &__heading {
+      @include fontBBC ($ls:$LSHeadingBasic);
+      color: #fbfdff;
+    }
+
+    &__text {
+      @include fontSans();
+      color: #fbfdff;
+      margin-top: 2rem;
+
+      &-bold {
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .modern {
+    margin-bottom: -13rem;
+    z-index: 1;
+    &-article {
+      &__app {
+        margin: 2rem 0;
+      }
+      &__text {
+        margin-top: 1rem;
+      }
+      &__heading {
+        font-size: $FSHeadBasic;
+      }
+    }
+  }
+}

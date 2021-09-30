@@ -1,0 +1,68 @@
+.luft {
+  margin-top: 8rem;
+  padding-bottom: 8rem;
+
+  &-article {
+    padding-left: 0;
+    &__heading {
+      @include fontBBC($fs: $FSHeadLuft, $lh: $LHH1);
+      color: #1652ac;
+      margin-top: 4rem;
+      position: relative;
+    }
+
+    &__line {
+      background: #edeff3;
+      width: 227px;
+      height: 7px;
+      margin-top: 3rem;
+    }
+
+    &__text {
+      margin-top: 3rem;
+      @include fontSans($fw: 600);
+      letter-spacing: $LSBasic;
+      color: #020303;
+    }
+
+    &__absolute {
+      position: absolute;
+      top: 20rem;
+    }
+  }
+  &-img {
+    padding-left: 5.5rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .luft {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    &-app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    &-img {
+      padding-left: 0;
+    }
+    &-article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__absolute {
+        position: static;
+      }
+      &__heading {
+        position: static;
+        text-align: center;
+        font-size: $FSHeadLuftMob;
+      }
+    }
+  }
+  .line-2 {
+    display: none;
+  }
+}

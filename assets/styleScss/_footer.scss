@@ -1,0 +1,32 @@
+.footer {
+  border-top: 2px solid #eef0f4;
+  &-app {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  &__name {
+    @include fontSans($fw: bold);
+    letter-spacing: $LSBasic;
+    color: #a3adba;
+  }
+  &__cont {
+    @include fontSans();
+    letter-spacing: $LSBasic;
+    color: #9eabbb;
+    &__normal {
+      color: black;
+    }
+    &__line {
+      text-decoration-line: underline;
+    }
+  }
+  &-shortlink > p {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fake {
+    display: none;
+  }
+}

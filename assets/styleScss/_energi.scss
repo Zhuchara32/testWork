@@ -1,0 +1,46 @@
+.energi {
+  padding-bottom: 8rem;
+  &-imgApp {
+    background: url(/assets/img/energy.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 477px;
+  }
+
+  &-article {
+    padding-left: 4rem;
+    &__heading {
+      @include fontBBC ($ls: $LSHeadingBasic);
+      color: #1652ac;
+    }
+
+    &__text {
+      @include fontSans();
+      color: #45494f;
+      margin-top: 2rem;
+
+      &__bold {
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .energi {
+    margin-bottom: 2rem;
+    &-img {
+      margin-left: 0;
+    }
+    &-imgApp {
+      height: 19rem;
+    }
+    &-article {
+      padding-left: 0;
+      &__heading {
+        text-align: center;
+        font-size: $FSHeadBasic;
+      }
+    }
+  }
+}

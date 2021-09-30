@@ -1,0 +1,31 @@
+.header {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+.app {
+  height: 2rem;
+}
+.nav-item {
+  @include fontSans($lh: $LHHeader, $fw: 400);
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.nav-link {
+  color: #45494f;
+}
+
+.item-active:hover {
+  color: #2e75ff;
+  border: 2px solid #eaedf5;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 992px) {
+  .navbar-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

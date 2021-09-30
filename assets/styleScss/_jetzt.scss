@@ -1,0 +1,66 @@
+.jetzt {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  &-heading {
+    @include fontBBC ($ls: $LSBasic, $fs: $FSHeadJetzt, $lh: 43px);
+    color: #1652ac;
+  }
+  &-contact {
+    &__text {
+      @include fontSans();
+      letter-spacing: $LSBasic;
+      color: #464c53;
+      margin-bottom: 1.5rem;
+    }
+    &__button {
+      background: linear-gradient(180deg, #0c5cd6 0%, rgba(0, 56, 140, 0) 100%),
+        #004fc7;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 4px rgba(48, 67, 133, 0.5);
+      border-radius: 12px;
+      @include fontBBC ($fs: $FSButtonJetzt, $fw: 500, $lh: $LHButtonJetzt);
+      text-align: center;
+      color: #ffffff;
+      height: 3.5rem;
+      &::before {
+        content: url(/assets/img/Arrow-button.png);
+        position: absolute;
+        left: 0;
+      }
+      &:hover::before {
+        animation-name: arrow;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+@keyframes arrow {
+  0% {
+    content: url(/assets/img/Arrow-button.png);
+    position: absolute;
+    left: 0;
+  }
+  100% {
+    content: url(/assets/img/Arrow-button.png);
+    position: absolute;
+    left: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .jetzt {
+    padding-bottom: 1rem;
+    &-heading {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: $FSHeadJetztMob;
+    }
+    &-contact {
+      &__button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

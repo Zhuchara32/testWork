@@ -1,0 +1,44 @@
+.unsere {
+  &-img {
+    background: url(/assets/img/IconHotToCold.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &-article {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    &__heading {
+      @include fontBBC ($ls:$LSHeadingBasic);
+      text-transform: uppercase;
+      color: #1652ac;
+    }
+
+    &__text {
+      @include fontSans();
+      color: #45494f;
+
+      &-bold {
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .unsere {
+    &-img {
+      width: 375px;
+      height: 555px;
+      background: url(/assets/img/IconHotToCold-mobile.png);
+      background-size: 100% 125%;
+    }
+    &-article {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      &__heading {
+        text-align: center;
+        font-size: $FSHeadBasicMob;
+      }
+    }
+  }
+}

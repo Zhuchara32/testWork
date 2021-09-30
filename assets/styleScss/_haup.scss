@@ -1,0 +1,43 @@
+.haup {
+  &-app {
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+  }
+  &-heading {
+    @include fontBBC ($ls:$LSHeadingInBorder, $fw: 500, $fs: $FSHeadInBorder);
+    color: #020303;
+    margin: 3rem 0;
+  }
+}
+
+.list-item {
+  list-style-type: none;
+  @include fontSans($lh: $LHHaup);
+  letter-spacing: $LSBasic;
+  color: #45494f;
+  margin-bottom: 2rem;
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__number {
+    height: 18px;
+    width: 20px;
+    border-radius: 20px;
+    font-size: 10px;
+    border: 1px solid black;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .haup {
+    &-heading {
+      font-size: $FSHeadInBorderMob;
+    }
+  }
+}

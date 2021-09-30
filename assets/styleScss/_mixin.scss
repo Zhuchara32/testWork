@@ -1,0 +1,16 @@
+@mixin fontSans($fw: normal, $fs: $FSText, $lh: $LHBasic) {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin fontBBC($fw: bold, $fs: $FSHeadBasic, $lh: $LHHeadingBasic, $ls: $LSBasic) {
+  font-family: BBC Reith Sans;
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
